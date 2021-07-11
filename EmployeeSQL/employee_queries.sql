@@ -46,8 +46,6 @@ AND last_name LIKE 'B%';
 
 -- Query 6: List all employees in the sales department, including:
 -- Employee number, last name, first name and department name
-
--- SELECT * FROM departments;
 -- Sales dept_no = d007
 
 SELECT  e.emp_no, e.last_name, e.first_name, d.dept_name
@@ -59,4 +57,14 @@ ON de.emp_no = e.emp_no
 WHERE d.dept_no = 'd007';
 
 
--- Query 7
+-- Query 7: List all employees in the Sales and Development departments including:
+-- Employee number, last_name, first name and department name
+-- Sales dept_no = d007, Development dept_no = d005
+
+SELECT  e.emp_no, e.last_name, e.first_name, d.dept_name
+FROM departments AS d
+JOIN dept_employees AS de
+ON d.dept_no = de.dept_no
+JOIN employees AS e
+ON de.emp_no = e.emp_no
+WHERE d.dept_no = 'd007' OR d.dept_no = 'd005';
