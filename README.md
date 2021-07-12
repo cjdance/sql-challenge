@@ -12,7 +12,7 @@ The first part of this project was to create an entity relationship diagram to b
 
 These CSV files were turned into tables using an online tool to help build the database, and you can view an image of the ERD below:
 
-![employees_ERD.png](/EmployeeSQL/employees_ERD.png)
+![employees_ERD.png](/EmployeeSQL/employees_ERD2.png)
 
 Creating this ERD also included designating the value types for each input on the tables (e.g. integer or varchar) and setting the primary keys for each table, as well as determining when a composite key was required.
 
